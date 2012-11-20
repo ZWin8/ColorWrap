@@ -1,0 +1,16 @@
+﻿<Page
+    x:Class="ColorWrap.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ColorWrap"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock Text="Demonstration of Multicolumn Grid." FontSize="30" FontFamily="Times New Roman"/>
+        <ScrollViewer HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Disabled" Margin="5 40 5 5">
+            <VariableSizedWrapGrid x:Name="wrapGrid"/>
+        </ScrollViewer>
+    </Grid>
+</Page>
